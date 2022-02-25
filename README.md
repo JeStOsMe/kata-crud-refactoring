@@ -4,6 +4,10 @@ Pueden ver los siguientes videos para poder comprender la base del código fuent
 
 https://www.youtube.com/watch?v=vqWvGgx_iXY&list=PL0IrPQPrkqoEUDXn1nsjzxSX2zflWtJW-
 
+## REPO Origen:
+
+https://github.com/Sofka-XT/kata-crud-refactoring/
+
 ## KATA Full Stack
 
 En el siguiente proyecto se presenta algunos conceptos de Full Stack, trabajando con Spring Boot + ReactJS.
