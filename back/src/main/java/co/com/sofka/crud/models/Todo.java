@@ -13,12 +13,13 @@ public class Todo {
     private Long id;
     private String name;
     private boolean completed;
-    private String groupListId;
+    //private String groupListId;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "ListOfTodos")
-    private Long motherList;
+    private ListOfTodos motherList;
 
+    /*
     public String getGroupListId() {
         return groupListId;
     }
@@ -26,7 +27,8 @@ public class Todo {
     public void setGroupListId(String groupListId) {
         this.groupListId = groupListId;
     }
-
+    */
+    
     public Long getId() {
         return id;
     }
@@ -51,13 +53,11 @@ public class Todo {
         this.completed = completed;
     }
 
-    public Long getMotherList() {
+    public ListOfTodos getMotherList() {
         return motherList;
     }
 
-    public void setMotherList(Long motherList) {
+    public void setMotherList(ListOfTodos motherList) {
         this.motherList = motherList;
-    }
-
-    
+    }    
 }

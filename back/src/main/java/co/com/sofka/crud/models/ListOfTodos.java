@@ -1,15 +1,14 @@
 package co.com.sofka.crud.models;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "Lista_de_TODOs")
 public class ListOfTodos {
 
     @Id
@@ -19,18 +18,11 @@ public class ListOfTodos {
     @Column(nullable = false, unique = true)
     private String listName;
 
-    private List<Todo> todosInList;
-
     public ListOfTodos() {
     }
 
     public ListOfTodos(String listName) {
         this.listName = listName;
-        this.todosInList = new ArrayList<Todo>();
-    }
-
-    public boolean saveTodo(Todo todo){
-        return this.todosInList.add(todo);
     }
 
     public Long getId() {
@@ -48,15 +40,5 @@ public class ListOfTodos {
     public void setListName(String listName) {
         this.listName = listName;
     }
-
-    public List<Todo> getTodosInList() {
-        return todosInList;
-    }
-
-    public void setTodosInList(List<Todo> todosInList) {
-        this.todosInList = todosInList;
-    }
-
-    
     
 }

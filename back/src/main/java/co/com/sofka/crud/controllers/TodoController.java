@@ -7,7 +7,7 @@ import co.com.sofka.crud.models.Todo;
 import co.com.sofka.crud.services.TodoService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:8080")
 public class TodoController {
 
     @Autowired
